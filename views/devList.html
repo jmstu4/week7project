@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Developer Collection</h1>
+    </div>
+    <br>
+
+    <table class="table table-condensed">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Level
+            </th>
+            <th>
+                State
+            </th>
+            <th>
+                Suburb
+            </th>
+            <th>
+                Street
+            </th>
+            <th>
+                Unit
+            </th>
+        </tr>
+        <% for(let i = 0; i<devs.length; i++) { %>
+        <tr>
+            <td>
+                <%= devs[i].id %>
+            </td>
+            <td>
+                <%= devs[i].name.firstName %>
+            </td>
+            <td>
+                <%= devs[i].name.lastName %>
+            </td>
+            <td>
+                <%= devs[i].level %>
+            </td>
+            <td>
+                <%= devs[i].address.state %>
+            </td>
+            <td>
+                <%= devs[i].address.suburb %>
+            </td>
+            <td>
+                <%= devs[i].address.street %>
+            </td>
+            <td>
+                <%= devs[i].address.unit %>
+            </td>
+        </tr>
+        <%} %>
+    </table>
+</body>
+<br>
+
+<div class="jumbotron">
+    <a href="/" class="btn btn-primary">Return Home</a>
+</div>
+
+</html>

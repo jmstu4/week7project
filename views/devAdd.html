@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Add Developer</h1>
+        <br>
+
+        <form action="/devNew" method="POST">
+            <div class="form-group">
+                First Name:
+                <input type="text" name="devFName" class="form-control" />
+                Last Name:
+                <input type="text" name="devLName" class="form-control" />
+                Level:
+                <input type="text" name="level" class="form-control" />
+                State:
+                <input type="text" name="state" class="form-control" />
+                Suburb:
+                <input type="text" name="suburb" class="form-control" />
+                Street:
+                <input type="text" name="street" class="form-control" />
+                Unit:
+                <input type="number" name="unit" class="form-control" />
+            </div>
+
+            <br>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

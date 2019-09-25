@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Task Collection</h1>
+    </div>
+    <br>
+
+    <table class="table table-condensed">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Task Name
+            </th>
+            <th>
+                Assigned To
+            </th>
+            <th>
+                Due Date
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        <% for(let i = 0; i<tasks.length; i++) { %>
+        <tr>
+            <td>
+                <%= tasks[i].id %>
+            </td>
+            <td>
+                <%= tasks[i].name %>
+            </td>
+            <td>
+                <%= tasks[i].assignTo %>
+            </td>
+            <td>
+                <%= tasks[i].due %>
+            </td>
+            <td>
+                <%= tasks[i].status %>
+            </td>
+            <td>
+                <%= tasks[i].description %>
+            </td>
+        </tr>
+        <%} %>
+    </table>
+</body>
+<br>
+
+<div class="jumbotron">
+    <a href="/" class="btn btn-primary">Return Home</a>
+</div>
+
+</html>

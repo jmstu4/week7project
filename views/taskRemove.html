@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Remove Task</h1>
+        <br>
+
+        <form action="/taskDelete" method="POST">
+            <div class="form-group">
+                Task ID:
+                <input type="text" name="taskId" class="form-control" />
+            </div>
+
+            <br>
+            <button class="btn btn-primary">Delete Task by ID</button>
+        </form>
+
+        <form action="/taskDeleteC" method="POST">
+            <button class="btn btn-primary">Delete All Completed Tasks</button>
+        </form>
+</body>
+
+</html>
